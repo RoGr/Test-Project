@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="27dp">
+
+    <RelativeLayout
+        android:id="@+id/background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border" />
+
+
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/photo"
+            android:text="Грунин"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/first_name"
+            android:layout_below="@+id/first_name"
+            android:layout_marginTop="5dp"
+            android:text="Роман"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/first_name"
+            android:layout_below="@+id/last_name"
+            android:layout_marginTop="5dp"
+            android:text="M"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/current_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/photo"
+            android:layout_below="@+id/photo"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:text="id:"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/current_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/photo"
+            android:padding="1dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/phone_label"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/photo"
+            android:layout_below="@+id/current_id_label"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:text="Номер:"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/phone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/phone_label"
+            android:layout_below="@+id/current_id"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/photo"
+            android:padding="1dp"
+            android:text="+79991366923"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/photo"
+            android:layout_below="@+id/phone_label"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:text="e-mail:"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/email_label"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/photo"
+            android:text="grunin.rg@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
